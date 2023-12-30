@@ -1,0 +1,106 @@
+:root {
+    --white : hsl(0, 0%, 100%);
+    --light-grey : hsl(217, 12%, 63%);
+    --medium-grey : hsl(216, 12%, 54%);
+    --dark-blue : hsl(213, 19%, 18%);
+    --very-dark-blue : hsl(216, 12%, 8%);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    border: box;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(/Roboto/Roboto-Regular.ttf);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #000000;
+    border: 5px solid yellow;
+}
+
+.survey {
+    background-color: var(--very-dark-blue);
+    border-radius: 30px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 100px;
+}
+
+.survey img {
+    background-color: var(--dark-blue);
+    border-radius: 30px;
+    padding: 20px;
+    align-self: flex-start; 
+}
+
+.survey h1 {
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+.survey p {
+    color: var(--light-grey);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.button-rating {
+    border-radius: 20px;
+    width: 90%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.rating {
+    color: var(--light-grey);
+    background-color: var(--dark-blue);
+    border-radius: 50px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.rating.active {
+    background-color: orange;
+    color: white;
+}
+
+#submit {
+   background-color: orange;
+   color: white;
+   width: 90%;
+   padding: 10px 0;
+   border-radius: 30px;
+}
+
+#submit:hover {
+    background-color: var(--white);
+    color: orange;
+}
+
+.exit-screen {
+    display: none;
+}
+
+
