@@ -101,6 +101,15 @@ body {
 
 .exit-screen {
     display: none;
+    color: var(--white);
+    background-color: var(--very-dark-blue);
+    border-radius: 30px;
+    width: 600px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 100px;
 }
 
 
